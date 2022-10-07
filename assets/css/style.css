@@ -1,0 +1,34 @@
+.app {
+    background: #f1f1f1;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:
+    'encabezado'
+    'destaques'
+    'footer';
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.encabezado {
+    grid-area: encabezado;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #f1f1f1;
+}
+.contenido {
+    grid-area: destaques;
+    padding: 0 2rem;
+}
+
+.footer { 
+    grid-area: footer;
+    background: #fdfdfd;
+    height: 50px;
+    text-align: center;
+    padding: 1rem; 
+}
